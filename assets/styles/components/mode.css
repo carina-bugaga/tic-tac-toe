@@ -1,0 +1,92 @@
+/* MODE PLAYERS */
+
+.mode {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head-block {
+  width: 90%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+#title-mode {
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+}
+.icon {
+  padding-right: 7px;
+}
+.button-setting:hover {
+  transform: rotate(360deg);
+	transition: all 1s linear;
+}
+.mode-block {
+  width: 360px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, auto) ;
+}
+.gameOver .square:hover,
+.square.X:hover,
+.square.O:hover {
+  background-color: var(--blue);
+  cursor: default;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--black);
+  margin: 3px;
+  background-color: var(--blue);
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  position: relative;
+}
+.square:hover {
+  background-color: var(--blue-dark);
+}
+.button-reset {
+  width: 50%;
+  font-size: 20px;
+  padding: 10px;
+  background-color: var(--rose-btn);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-out;
+}
+.button-reset:hover {
+  background-color: var(--pink-dark);
+}
+
+@media ((min-width: 300px) and (max-width: 600px)) {
+  .mode-block {
+    width: 320px;
+  }
+  #title-mode {
+    font-size: 18px;
+  }
+  .turnIndicator {
+    font-size: 18px;
+  }
+  .square {
+    width: 92px;
+    height: 92px;
+    margin: 2px;
+  }
+  .button-reset {
+    font-size: 16px;
+    width: 60%;
+  }
+}

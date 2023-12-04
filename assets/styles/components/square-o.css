@@ -1,0 +1,22 @@
+/*  SQUARE O */
+
+.square.O .outline:after {
+  content: '';
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border-radius: 50%;
+  border: 14px solid var(--black);
+  z-index: 2;
+}
+.square.O .front:before {
+  content: '';
+  position: absolute;
+  background: transparent;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 8px solid var(--red);
+  z-index: 3;
+}

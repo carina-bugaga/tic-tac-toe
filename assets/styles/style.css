@@ -1,0 +1,54 @@
+@import url(./components/start-page.css);
+@import url(./components/mode.css);
+@import url(./components/square-x.css);
+@import url(./components/square-o.css);
+
+:root {
+  --green-dark: #89B9AD;
+  --pink: #C08484;
+  --blue-bg: #83A2FF;
+  --blue: #A5C0DD;
+  --purple: #9F91CC;
+  --rose-btn: #E8A0BF;
+  --blue-dark: #819dbb;
+  --pink-dark: #E966A0;
+  --blue-dark-btn: #4477CE;
+  --green-btn: #29ADB2;
+  --green-light: #C8E4B2;
+  --yellow: #F4F27E;
+  --black: #000000;
+  --red: #FF90BC;
+}
+
+.page {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.hidden {
+  display: none;
+}
+h1, h2, h3 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  border: 2px solid var(--black);
+  border-radius: 6px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+}
+.button-transparent {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

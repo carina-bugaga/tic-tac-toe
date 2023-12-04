@@ -1,0 +1,65 @@
+/*  SQUARE X */
+
+.square .outline {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+.square .front {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+}
+.square.X .outline:before {
+  position: absolute;
+  content: '';
+  background: var(--black);
+  width: 14px;
+  height: 58px;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+.square.X .outline:after {
+  position: absolute;
+  content: '';
+  background: var(--black);
+  width: 14px;
+  height: 58px;
+  transform: rotate(-45deg);
+  z-index: 2;
+}
+.square.X .front:before {
+  position: absolute;
+  content: '';
+  background: var(--yellow);
+  width: 8px;
+  height: 52px;
+  transform: rotate(45deg);
+  z-index: 3;
+}
+.square.X .front:after {
+  position: absolute;
+  content: '';
+  background: var(--yellow);
+  width: 8px;
+  height: 52px;
+  transform: rotate(-45deg);
+  z-index: 3;
+}
+
+@media ((min-width: 300px) and (max-width: 600px)) {
+  .square .outline {
+    width: 92px;
+    height: 92px;
+  }
+  .square .front {
+    width: 92px;
+    height: 92px;
+  }
+}

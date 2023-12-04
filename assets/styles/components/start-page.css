@@ -1,0 +1,55 @@
+/* START PAGE */
+
+.start-setting-page {
+  background-color: var(--purple);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: transform 0.5s ease-out;
+  transform: translatey(0%);
+}
+.title-start img {
+  margin-left: 15px;
+}
+.start-block {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  padding: 0 15px;
+  gap: 15px;
+}
+.button-players {
+  font-size: 20px;
+  padding: 10px;
+  background: var(--rose-btn);
+}
+.button-pc-easy {
+  font-size: 20px;
+  padding: 10px;
+  background: var(--blue-dark-btn);
+}
+.button-pc-hard {
+  font-size: 20px;
+  padding: 10px;
+  background: var(--green-btn);
+}
+.flex-box {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.hidden-page {
+  transform: translatey(-100%);
+}
+
+@media ((min-width: 300px) and (max-width: 600px)) {
+  .start-block {
+    width: 320px;
+  }
+}

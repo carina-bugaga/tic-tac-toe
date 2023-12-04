@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="favicon.ico"/>
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <title>Tic tac toe | Крестики нолики</title>
+</head>
+<body class="page">
+  <section class="start-setting-page" id="page-start">
+    <div class="start-block">
+      <h1 class="title-start">Tic tac toe <img src="./assets/img/tic-tac-toe.svg" alt="tic tac toe"/></h1>
+      <h3>Выберите режим игры</h3>
+      <div class="mode-game flex-box">
+        <button class="button button-players button-start" id="button-players">2 игрока</button>
+        <button class="button button-pc-easy button-start" id="button-pc-easy">Против ПК (easy)</button>
+        <button class="button button-pc-hard button-start" id="button-pc-hard">Против ПК (hard)</button>
+      </div>
+    </div>
+  </section>
+  <!--end Start Page-->
+
+  <section class="hidden mode" id="mode-page">
+    <div class="mode-block">
+      <div class="head-block">
+        <h2 id="title-mode"></h2>
+        <button class="button button-transparent button-setting" id="button-setting">
+          <img src="./assets/img/setting.svg" alt="setting"/>
+        </button>
+      </div>
+      <h3 class="turnIndicator">Начало игры</h3>
+      <div class="board">
+        <div class="square">
+          <div class="outline"></div>
+          <div class="front"></div>
+        </div>
+        <div class="square">
+          <div class="outline"></div>
+          <div class="front"></div>
+        </div>
+        <div class="square">
+          <div class="outline"></div>
+          <div class="front"></div>
+        </div>
+        <div class="square">
+          <div class="outline"></div>
+          <div class="front"></div>
+        </div>
+        <div class="square">
+          <div class="outline"></div>
+          <div class="front"></div>
+        </div>
+        <div class="square">
+          <div class="outline"></div>
+          <div class="front"></div>
+        </div>
+        <div class="square">
+          <div class="outline"></div>
+          <div class="front"></div>
+        </div>
+        <div class="square">
+          <div class="outline"></div>
+          <div class="front"></div>
+        </div>
+        <div class="square">
+          <div class="outline"></div>
+          <div class="front"></div>
+        </div>
+      </div>
+      <button class="button button-reset" id="button-reset">
+        Новая игра
+        <img src="./assets/img/click.svg" alt="click"/>
+      </button>
+    </div>
+  </section>
+  <!--end Mode-->
+  
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>
